@@ -107,7 +107,7 @@ body {
     /* color: #fff; */
     padding-left: 10px;
     border-left: 6px solid #e014e7;
-    background: -webkit-linear-gradient(#e014e7,white);
+    background: -webkit-linear-gradient(#ffffff,#e014e7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: tomato; 
@@ -175,7 +175,7 @@ body {
   }
   
   #intro .nombre {
-    color: #e014e7;
+    color: #ffffff;
     margin-bottom: 30px;
     font-size: 175px;
     font-weight: 700;
