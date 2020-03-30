@@ -2,19 +2,19 @@
 # General
 --------------------------------------------------------------*/
 body {
-    background: #fff;
+    background: lightgray;
     color: #666666;
-    font-family: 'Ribeye Marrow', cursive;
-    font-family: 'Ribeye', cursive;
+    /* font-family: 'Ribeye Marrow', cursive; */
+    font-family: 'Arima Madurai', cursive;
   }
   
   a {
-    color: #18d26e;
+    color: #96f7e6;
     transition: 0.5s;
   }
   
   a:hover, a:active, a:focus {
-    color: #18d36e;
+    color: #96f7e6;
     outline: none;
     text-decoration: none;
   }
@@ -25,9 +25,10 @@ body {
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ribeye Marrow', cursive;
+    /* font-family: 'Ribeye Marrow', cursive; */
+    font-family: 'Arima Madurai', cursive;
     font-weight: 400;
-    margin: 0 0 20px 0;
+    /* margin: 0 0 20px 0; */
     padding: 0;
   }
   
@@ -35,7 +36,7 @@ body {
   .back-to-top {
     position: fixed;
     display: none;
-    background: #e014e7;
+    background: #96f7e6;
     color: #fff;
     display: inline-block;
     width: 44px;
@@ -60,7 +61,36 @@ body {
       bottom: 15px;
     }
   }
+  /* Back to ws */
+  .back-to-ws {
+    position: fixed;
+    display: none;
+    background: green;
+    /* background: url("../img/ws.jpg") center top no-repeat fixed; */
+    /* color: black; */
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 350px;
+    transition: background 0.5s;
+    z-index: 11;
+  }
   
+  .back-to-ws i {
+    padding-top: 12px;
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .back-to-ws {
+      bottom: 15px;
+    }
+  }
   /*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
@@ -94,11 +124,12 @@ body {
   }
   
   #header #logo h1 {
-    font-size: 34px;
+    font-size: 40px;
     margin: 0;
     padding: 0;
     line-height: 1;
-    font-family: 'Ribeye Marrow', cursive;
+    /* font-family: 'Ribeye Marrow', cursive; */
+    font-family: 'Arima Madurai', cursive;
     font-weight: 700;
     letter-spacing: 3px;
   }
@@ -106,12 +137,13 @@ body {
   #header #logo h1 a, #header #logo h1 a:hover {
     /* color: #fff; */
     padding-left: 10px;
-    border-left: 6px solid #e014e7;
-    background: -webkit-linear-gradient(#ffffff,#e014e7);
+    border-left: 6px solid black;
+    /* background: -webkit-linear-gradient(black,white); */
+    background: black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: tomato; 
-    font-family: 'Times New Roman', Times, serif; 
+    font-family: 'Ribeye Marrow', cursive;
   }
  
   #header #logo img {
@@ -148,7 +180,7 @@ body {
   
   #intro .carousel-item::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     height: 100%;
     width: 100%;
@@ -175,8 +207,8 @@ body {
   }
   
   #intro .nombre {
-    color: #ffffff;
-    margin-bottom: 30px;
+    color: #96f7e6;
+    /* margin-bottom: 30px; */
     font-size: 175px;
     font-weight: 700;
     font-family: 'Ribeye Marrow', cursive;
@@ -184,11 +216,12 @@ body {
   }
 
   #intro h2 {
-    color: #80b484;
-    margin-bottom: 30px;
+    color: #96f7e6;
+    /* margin-bottom: 30px; */
     font-size: 75px;
     font-weight: 700;
-    font-family: 'Ribeye Marrow', cursive;
+    /* font-family: 'Ribeye Marrow', cursive; */
+    font-family: 'Arima Madurai', cursive;
     font-weight: bold;
   }
   
@@ -206,14 +239,14 @@ body {
   
   #intro p {
     width: 80%;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 10px auto;
     color: #fff;
-    font-size: 30px;
+    font-size: 42px;
   }
   
   @media (min-width: 1024px) {
     #intro p {
-      width: 60%;
+      width: 100%;
     }
   }
   
@@ -265,7 +298,8 @@ body {
   }
   
   #intro .btn-get-started {
-    font-family: 'Ribeye', cursive;
+    /* font-family: 'Ribeye', cursive; */
+    font-family: 'Arima Madurai', cursive;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
@@ -274,13 +308,14 @@ body {
     border-radius: 50px;
     transition: 0.5s;
     margin: 10px;
-    color: #fff;
-    background: #e014e7;
+    color: black;
+    font-weight: bold;
+    background: #96f7e6;
   }
   
   #intro .btn-get-started:hover {
-    background: #fff;
-    color: #096b15;
+    background: black;
+    color: #96f7e6;
   }
   
   /*--------------------------------------------------------------
@@ -365,16 +400,17 @@ body {
     padding: 0 8px 10px 8px;
     text-decoration: none;
     display: inline-block;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
+    color: black;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: 'Arima Madurai', cursive;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 15px;
     text-transform: uppercase;
     outline: none;
   }
   
   .nav-menu li:hover > a, .nav-menu > .menu-active > a {
-    color: #e014e7;
+    color: black;
   }
   
   .nav-menu > li {
@@ -385,7 +421,7 @@ body {
     margin: 4px 0 0 0;
     padding: 10px;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-    background: rgb(131, 129, 129);
+    
   }
   
   .nav-menu ul li {
@@ -394,15 +430,16 @@ body {
   
   .nav-menu ul li a {
     padding: 10px;
-    color: white;
+    color: black;
     transition: 0.3s;
     display: block;
-    font-size: 13px;
+    font-size: 15px;
     text-transform: none;
   }
   
   .nav-menu ul li:hover > a {
-    color: #18d26e;
+    color: #96f7e6;
+    background: gray;
   }
   
   .nav-menu ul ul {
@@ -471,7 +508,8 @@ body {
     display: block;
     outline: none;
     font-weight: 700;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: 'Arima Madurai', cursive;
   }
   
   #mobile-nav ul li a:hover {
@@ -534,14 +572,15 @@ body {
   --------------------------------*/
   .section-header h3 {
     font-size: 32px;
-    color: #096b15;
+    color: black;
     text-transform: uppercase;
     text-align: center;
     font-weight: 700;
     position: relative;
     padding-bottom: 15px;
+    margin-top: 20px;
   }
-  
+
   .section-header h3::before {
     content: '';
     position: absolute;
@@ -559,14 +598,14 @@ body {
     display: block;
     width: 40px;
     height: 3px;
-    background: #18d26e;
+    background: black;
     bottom: 0;
     left: calc(50% - 20px);
   }
   
   .section-header p {
     text-align: center;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     color: #333;
   }
 
@@ -590,8 +629,10 @@ body {
   
   /* Featured Services Section
   --------------------------------*/
+  
   #featured-services {
-    background: #000;
+    background: #96f7e6;
+    height: 30px;
   }
   
   #featured-services .box {
@@ -630,11 +671,12 @@ body {
   #featured-services h4 a {
     color: #fff;
     /* color: #e014e7; */
-    background: -webkit-linear-gradient(#e014e7,white);
+    background: -webkit-linear-gradient(coral,white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: tomato;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Arima Madurai', cursive;
   }
   
   #featured-services h4 a:hover {
@@ -653,7 +695,7 @@ body {
   #about {
     background: url("../img/about-bg.png") center top no-repeat fixed;
     background-size: cover;
-    padding: 60px 0 10px 0;
+    padding: 10px 0 10px 0;
     position: relative;
   }
   
@@ -685,8 +727,15 @@ body {
   }
   
   #about .about-col .img img {
-    border-radius: 4px 4px 0 0;
+    border-radius: 50%;
   }
+  #about .container-fluid .about-cols .about-col .pepe{
+    max-width: 20%;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
   
   #about .about-col .icon {
     width: 64px;
@@ -724,7 +773,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     padding: 0;
-    margin: 40px 0 12px 0;
+    margin: 10px 0 1px 0;
   }
   
   #about .about-col h2 a {
@@ -732,7 +781,7 @@ body {
   }
   
   #about .about-col h2 a:hover {
-    color: #2a72ed;
+    color: coral;
   }
   
   #about .about-col p {
@@ -740,8 +789,9 @@ body {
     line-height: 24px;
     color: #333;
     margin-bottom: 0;
-    padding: 0 20px 20px 20px;
-  }
+    padding: 10px 20px 20px 120px;
+    width: 100%;
+}
 
   @media (max-width: 768px) {
   #about .about-col p {
@@ -752,9 +802,13 @@ body {
   /* Services Section
   --------------------------------*/
   #services {
-    background: #fff;
+    background: #f7f7f7;
     background-size: cover;
-    padding: 60px 0 40px 0;
+    /* padding: 60px 0 40px 0; */
+  }
+  #services .container .section-header .new {
+    color: rgb(114, 110, 111);
+    margin-bottom: 0px;
   }
   
   #services .box {
@@ -821,7 +875,8 @@ body {
   }
   
   #call-to-action .cta-btn {
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: 'Arima Madurai', cursive;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
@@ -852,7 +907,8 @@ body {
   }
   
   #skills .progress .skill {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: 'Arima Madurai', cursive;
     line-height: 35px;
     padding: 0;
     margin: 0 0 0 20px;
@@ -897,7 +953,8 @@ body {
   }
   
   #facts .counters span {
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: 'Arima Madurai', cursive;
     font-weight: bold;
     font-size: 48px;
     display: block;
@@ -907,7 +964,8 @@ body {
   #facts .counters p {
     padding: 0;
     margin: 0 0 20px 0;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: 'Arima Madurai', cursive;
     font-size: 14px;
     color: #111;
   }
@@ -920,7 +978,7 @@ body {
   /* Portfolio Section
   --------------------------------*/
   #portfolio {
-    padding: 20px 0;
+    /* padding: 20px 0; */
   }
   
   #portfolio #portfolio-flters {
@@ -946,8 +1004,8 @@ body {
   }
   
   #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-    background: #096b15;
-    color: #fff;
+    background: black;
+    color: #96f7e6;
   }
   
   #portfolio #portfolio-flters li:last-child {
@@ -957,6 +1015,8 @@ body {
   #portfolio .portfolio-wrap {
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
+    width: 300px;
+    height: 555px;
   }
   
   #portfolio .portfolio-wrap:hover {
@@ -965,14 +1025,16 @@ body {
   
   #portfolio .portfolio-item {
     position: relative;
-    height: 360px;
+    width: 300px;
+    height: 600px;
     overflow: hidden;
   }
   
   #portfolio .portfolio-item figure {
-    background: #096b15;
+    background: lightgray;
     overflow: hidden;
-    height: 230px;
+    width: 300px;
+    height: 450px;
     position: relative;
     border-radius: 4px 4px 0 0;
     margin: 0;
@@ -1033,7 +1095,8 @@ body {
   #portfolio .portfolio-item .portfolio-info {
     background: #fff;
     text-align: center;
-    padding: 20px 5px;
+    padding-top: 15px;
+    width: 90%;
     height: 100px;
     border-radius: 0 0 3px 3px;
   }
@@ -1047,17 +1110,17 @@ body {
   }
   
   #portfolio .portfolio-item .portfolio-info h4 a {
-    color: #333;
+    color: black;
   }
   
   #portfolio .portfolio-item .portfolio-info h4 a:hover {
-    color: #18d26e;
+    color: coral;
   }
   
   #portfolio .portfolio-item .portfolio-info p {
     padding: 0;
     margin: 0;
-    color: #096b15;
+    color: black;
     font-weight: 500;
     font-size: 14px;
     /* text-transform: uppercase; */
@@ -1103,8 +1166,8 @@ body {
   }
   
   #portfolio-mobile #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-    background: #096b15;
-    color: #fff;
+    background: #96f7e6;
+    color: black;
   }
   
   #portfolio-mobile #portfolio-flters li:last-child {
@@ -1241,7 +1304,7 @@ body {
     margin-top: 5px;
     text-align: center;
   }
-  
+
   #clients .owl-dot {
     display: inline-block;
     margin: 0 5px;
@@ -1252,7 +1315,7 @@ body {
   }
   
   #clients .owl-dot.active {
-    background-color: #18d26e;
+    background-color: #96f7e6;
   }
   
   /* Testimonials Section
@@ -1540,7 +1603,8 @@ body {
     margin: 0 0 20px 0;
     padding: 2px 0 2px 10px;
     line-height: 1;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: 'Arima Madurai', cursive;
     font-weight: 700;
     letter-spacing: 3px;
     border-left: 4px solid #096b15;
@@ -1550,7 +1614,8 @@ body {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: 'Arima Madurai', cursive;
     color: #eee;
   }
   
@@ -1681,7 +1746,7 @@ body {
   # Comunicados
   --------------------------------------------------------------*/
   #header {
-    background: #80b484;
+    background: #96f7e6;
   }
 
   .comunicados #logo h1 a {
@@ -1701,10 +1766,10 @@ body {
  }
  #main .container-fluid .row a {
    display: block;
-   background: #096b15;
+   /*background: #096b15;*/
    font-style: bold;
    font-size: 20px;
-   color: #fff;
+   /* color: #fff; */
    margin: 0 30px;
    border-radius: 50px;
    padding: 5px;
@@ -1712,3 +1777,13 @@ body {
  #main .meses h3 {
    margin-top: 10px;
  }
+ .btn-success {
+  color: black;
+  background-color: #96f7e6;
+  border-color: black;
+}
+.btn-success:hover {
+  color: #96f7e6;
+  background-color: black;
+  border-color: #96f7e6;
+}
