@@ -187,8 +187,8 @@ if('serviceWorker' in navigator){
 if( window.Notification && Notification.permission !== 'denied' ) {
   Notification.requestPermission(status => {
     console.log(status)
-    let n = new Notification('Tucumán Rugby Club', {
-      body: 'Te damos la bienvenida a nuestra web.',
+    let n = new Notification('INKILL', {
+      body: 'Talles reales para la mujer que sos.',
       icon: './img/favicon-192.png'
     })
   })
