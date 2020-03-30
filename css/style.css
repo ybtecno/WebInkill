@@ -106,7 +106,7 @@ body {
   }
   
   #header.header-scrolled {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(159, 240, 220, 0.7);
     padding: 20px 0;
     height: 72px;
     transition: all 0.5s;
@@ -710,7 +710,7 @@ body {
     z-index: 9;
   }
   
-  #about .container-fluid {
+  #about .container {
     position: relative;
     z-index: 10;
   }
@@ -727,9 +727,9 @@ body {
   }
   
   #about .about-col .img img {
-    border-radius: 50%;
+    border-radius: 10%;
   }
-  #about .container-fluid .about-cols .about-col .pepe{
+  #about .container .about-cols .about-col .pepe{
     max-width: 20%;
     height: auto;
     float: left;
@@ -772,7 +772,7 @@ body {
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    padding: 0;
+    padding-top: 10px;
     margin: 10px 0 1px 0;
   }
   
@@ -789,7 +789,7 @@ body {
     line-height: 24px;
     color: #333;
     margin-bottom: 0;
-    padding: 10px 20px 20px 120px;
+    padding: 10px 20px 10px 120px;
     width: 100%;
 }
 
@@ -1062,6 +1062,7 @@ body {
     padding-top: 6px;
     font-size: 22px;
     color: #333;
+    text-align: center;
   }
   
   #portfolio .portfolio-item figure .link-preview:hover, #portfolio .portfolio-item figure .link-details:hover {
@@ -1584,14 +1585,14 @@ body {
   --------------------------------------------------------------*/
   #footer {
     background: #96f7e6;
-    padding: 0 0 30px 0;
+    padding: 0 0 0px 0;
     color: black;
     font-size: 14px;
   }
   
   #footer .footer-top {
     background: #96f7e6;
-    padding: 60px 0 30px 0;
+    padding: 10px 0 0px 0;
   }
   
   #footer .footer-top .footer-info {
