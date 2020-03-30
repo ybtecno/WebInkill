@@ -1583,14 +1583,14 @@ body {
   # Footer
   --------------------------------------------------------------*/
   #footer {
-    background: #000;
+    background: #96f7e6;
     padding: 0 0 30px 0;
-    color: #eee;
+    color: black;
     font-size: 14px;
   }
   
   #footer .footer-top {
-    background: #111;
+    background: #96f7e6;
     padding: 60px 0 30px 0;
   }
   
@@ -1607,7 +1607,7 @@ body {
     font-family: 'Arima Madurai', cursive;
     font-weight: 700;
     letter-spacing: 3px;
-    border-left: 4px solid #096b15;
+    border-left: 4px solid black;
   }
   
   #footer .footer-top .footer-info p {
@@ -1616,14 +1616,14 @@ body {
     margin-bottom: 0;
     /* font-family: "Montserrat", sans-serif; */
     font-family: 'Arima Madurai', cursive;
-    color: #eee;
+    color: black;
   }
   
   #footer .footer-top .social-links a {
     font-size: 18px;
     display: inline-block;
     background: #333;
-    color: #eee;
+    color: #96f7e6;
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -1636,13 +1636,13 @@ body {
   
   #footer .footer-top .social-links a:hover {
     background: #18d26e;
-    color: #fff;
+    color: black;
   }
   
   #footer .footer-top h4 {
     font-size: 14px;
     font-weight: bold;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     position: relative;
     padding-bottom: 12px;
@@ -1678,7 +1678,7 @@ body {
   
   #footer .footer-top .footer-links ul i {
     padding-right: 8px;
-    color: #ddd;
+    color: black;
   }
   
   #footer .footer-top .footer-links ul li {
@@ -1691,11 +1691,12 @@ body {
   }
   
   #footer .footer-top .footer-links ul a {
-    color: #eee;
+    color: black;
   }
   
   #footer .footer-top .footer-links ul a:hover {
-    color: #18d26e;
+    color: #96f7e6;
+    background: black;
   }
   
   #footer .footer-top .footer-contact {
@@ -1722,7 +1723,7 @@ body {
     width: 35%;
     padding: 6px 0;
     text-align: center;
-    color: #fff;
+    color: black;
     transition: 0.3s;
     cursor: pointer;
   }
@@ -1739,7 +1740,7 @@ body {
   #footer .credits {
     text-align: center;
     font-size: 13px;
-    color: #ddd;
+    color: black;
   }
   
   /*--------------------------------------------------------------
