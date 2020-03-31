@@ -2,7 +2,11 @@
 # General
 --------------------------------------------------------------*/
 body {
-    background: lightgray;
+    /* background: lightgray; */
+    background: url("../img/about-bg.png") center top no-repeat fixed;
+    background-size: cover;
+    padding: 10px 0 10px 0;
+    position: relative;
     color: #666666;
     /* font-family: 'Ribeye Marrow', cursive; */
     font-family: 'Arima Madurai', cursive;
@@ -65,15 +69,15 @@ body {
   .back-to-ws {
     position: fixed;
     display: none;
-    background: green;
+    /* background: green; */
     /* background: url("../img/ws.jpg") center top no-repeat fixed; */
     /* color: black; */
     display: inline-block;
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     line-height: 1;
-    font-size: 16px;
+    font-size: 50px;
     border-radius: 50%;
     right: 15px;
     bottom: 350px;
@@ -83,7 +87,7 @@ body {
   
   .back-to-ws i {
     padding-top: 12px;
-    color: black;
+    color: green;
   }
   
   @media (max-width: 768px) {
@@ -386,6 +390,7 @@ body {
   @media (min-width: 1024px) {
     #nav-menu-container {
       padding-right: 20px;
+      width: 60%;
     }
   }
   
@@ -624,7 +629,7 @@ body {
   /* Section with background
   --------------------------------*/
   .section-bg {
-    background: #f7f7f7;
+    /* background: #f7f7f7; */
   }
   
   /* Featured Services Section
@@ -716,7 +721,7 @@ body {
   }
   
   #about .about-col {
-    background: #fff;
+    /* background: #fff; */
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
     margin-bottom: 20px;
@@ -755,16 +760,22 @@ body {
   #about .about-col i {
     font-size: 36px;
     line-height: 1;
-    color: #fff;
+    color: #96f7e6;
     transition: 0.3s;
-  }
+    /* width: 99%; */
+    /* margin-left: 10px; */
+    border: 2px solid #96f7e6;
+    border-radius: 50%;
+    padding: 20px;
+}
   
   #about .about-col:hover .icon {
     background-color: #fff;
   }
   
   #about .about-col:hover i {
-    color: #096b15;
+    color: #96f7e6;
+    background: black;
   }
   
   #about .about-col h2 {
@@ -802,7 +813,7 @@ body {
   /* Services Section
   --------------------------------*/
   #services {
-    background: #f7f7f7;
+    /* background: #f7f7f7; */
     background-size: cover;
     /* padding: 60px 0 40px 0; */
   }
