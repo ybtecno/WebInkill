@@ -391,6 +391,7 @@ body {
     #nav-menu-container {
       padding-right: 20px;
       width: 60%;
+      margin-top: 10px;
     }
   }
   
@@ -425,7 +426,9 @@ body {
   .nav-menu ul {
     margin: 4px 0 0 0;
     padding: 10px;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    background: lightgray;
+    border-radius: 10%;
+    /* box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25); */
     
   }
   
@@ -759,6 +762,7 @@ body {
   
   #about .about-col i {
     font-size: 36px;
+    background: black;
     line-height: 1;
     color: #96f7e6;
     transition: 0.3s;
@@ -775,7 +779,7 @@ body {
   
   #about .about-col:hover i {
     color: #96f7e6;
-    background: black;
+    background: transparent;
   }
   
   #about .about-col h2 {
@@ -1178,12 +1182,14 @@ body {
   }
   
   #portfolio-mobile #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-    background: #96f7e6;
-    color: black;
+    background: black;
+    color: #96f7e6;
+    font-size: 20px;
   }
   
   #portfolio-mobile #portfolio-flters li:last-child {
     margin-right: 0;
+    
   }
   
   #portfolio-mobile .portfolio-wrap {
@@ -1777,26 +1783,31 @@ body {
  .comunicados .container-fluid .nav-menu ul {
   background: #f2f2f2;
  }
+ }
  #main .container-fluid .row a {
    display: block;
-   /*background: #096b15;*/
+   background: black;
    font-style: bold;
    font-size: 20px;
-   /* color: #fff; */
-   margin: 0 30px;
+   color: #96f7e6;
+   margin: 0 30px 30px 0;
    border-radius: 50px;
    padding: 5px;
+   border: 2px solid #96f7e6;
  }
  #main .meses h3 {
    margin-top: 10px;
  }
  .btn-success {
+  color: #96f7e6;
+  background-color: black;
+  border-color: #96f7e6;
+}
+.btn-success:hover {
   color: black;
   background-color: #96f7e6;
   border-color: black;
 }
-.btn-success:hover {
-  color: #96f7e6;
-  background-color: black;
-  border-color: #96f7e6;
+#services .container-fluid .section-bg .btnTienda {
+  width: 70%;
 }

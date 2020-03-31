@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Tucumán Rugby Club</title>
+  <title>INKILL</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -28,12 +28,18 @@
   <link rel="manifest" href="../manifest.json">
 
   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ribeye&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
+  <link href="../lib/font-awesome/css/all.css" rel="stylesheet"> 
+  <link href="../lib/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+
   <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="../lib/animate/animate.min.css" rel="stylesheet">
   <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
@@ -48,256 +54,263 @@
 
 <body>
 
-    <!--==========================
-                Header
-    ============================-->
-    <header id="header" class="comunicados" >
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="/__/firebase/7.11.0/firebase-app.js"></script>
+
+   <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+ 
+   <!-- Initialize Firebase -->
+   <script src="/__/firebase/init.js"></script>
+ 
+     <!--==========================
+                 Header
+     ============================-->
+     <header id="header">
+       <div class="container-fluid">
+ 
+         <div id="logo" class="pull-left">
+             <h1><a href="../index.html" class="scrollto">INKILL</a></h1>
+             <!-- <h1><a href="#intro" class="scrollto">Tu lugar secreto</a></h1>         -->
+         </div>
+ 
+         <nav id="nav-menu-container">
+           <ul class="nav-menu">
+               <li class="menu-active"><a href="../index.html">Portada</a></li>
+               <li class="menu-has-children"><a href="../html/comunicados.html">Tienda</a>
+               <ul>
+                   <li><a href="../html/polleras.html">Polleras</a></li>
+                   <li><a href="../html/reseniaHistorica.html">Vestidos</a></li>
+                   <li><a href="../html/pantalones.html">Pantalones</a></li>
+                   <li><a href="../html/blusas.html">Blusas</a></li>         
+               </ul>
+               </li>
+               <li class="menu-has-children"><a href="#promos">Promos</a>
+               <ul>
+                   <li><a href="../html/vestidos.html">Vestidos</a></li>
+                   <li><a href="../html/remeras.html">Remeras</a></li>
+                   <li><a href="../html/pantalones.html">Pantalones</a></li>
+                   <li><a href="../html/camisetas.html">Camisetas</a></li>
+                   <li><a href="../html/shorts.html">Shorts</a></li>
+               </ul>
+               </li>
+               <!-- <li class="menu-has-children"><a href="#services">Eventos</a>
+                   <ul>
+                       
+                       <li><a href="#">Actividad Verano</a></li>
+                   </ul>
+               </li> -->
+               <li><a href="#">Galería</a></li>
+               <li class="menu-has-children"><a href="#footer">Contacto</a>
+               <ul>
+                   <li><a href="#">Redes Sociales</a></li>
+                   <li><a href="#">Enviar Correo</a></li>
+                   <li><a href="#">Ubicaciones</a></li>
+               </ul>
+               </li>
+               
+           </ul>
+         </nav><!-- #nav-menu-container -->
+ 
+         <!-- <div class="btnNav"> 
+           <div class="tbnbusqueda"><i class="fas fa-store"></i></div>
+         </div>       -->
+ 
+       </div>
+     </header><!-- #header -->
+
+     <main id="main">
+
+      <!-- Encabezado de tienda -->
+      <section id="about">
         <div class="container-fluid">
-
-          <div id="logo" class="pull-left">
-              <h1><a href="#intro" class="scrollto">Tucumán Rugby Club</a></h1>            
-          </div>
-
-          <nav id="nav-menu-container">
-            <ul class="nav-menu comunicados">
-                <li class="menu-active"><a href="../index.html">Inicio</a></li>
-                <li class="menu-has-children"><a href="../index.html">Nosotros</a>
-                <ul>
-                    <li><a href="../html/comunicados.html">Comunicados</a></li>
-                    <li><a href="../html/reseniaHistorica.html">Reseña Histórica</a></li>
-                    <li><a href="../html/proyectos.html">Proyectos</a></li>
-                    <li><a href="../html/instalaciones.html">Instalaciones</a></li>         
-                </ul>
-                </li>
-                <li class="menu-has-children"><a href="#services">Actividades</a>
-                <ul>
-                    <li><a href="../html/rugby.html">Rugby</a></li>
-                    <li><a href="../html/hockey.html">Hockey</a></li>
-                    <li><a href="../html/tenis.html">Tenis</a></li>
-                    <li><a href="#">Fútbol</a></li>
-                    <li><a href="../html/eventosSociales.html">Eventos Sociales</a></li>
-                </ul>
-                </li>
-                
-                <li><a href="../html/galeria.html">Galería</a></li>
-                <li class="menu-has-children"><a href="#footer">Contacto</a>
-                <ul>
-                    <li><a href="#">Redes Sociales</a></li>
-                    <li><a href="#">Enviar Correo</a></li>
-                    <li><a href="#">Ubicaciones</a></li>
-                </ul>
-                </li>
-                
-            </ul>
-          </nav><!-- #nav-menu-container -->
-        </div>
-    </header><!-- #header -->
-
-  <main id="main">
-
-    <section id="about">
-      <div class="container-fluid">
-
-        <header class="section-header comunicados">
-          <h3>Comunicados</h3>
-          <p class="desktop">Todos los comunicados institucionales los podes encontrar aquí, mantenete informado con todo lo institucional de nuestro club.</p>
-          <!-- <p class="mobile">Todos los comunicados institucionales los podes encontrar aquí, mantenete informado con todo lo institucional de nuestro club.</p> -->
-        </header>
-
-      </div>
-    </section><!-- #about -->
-    
-    <!-- Enero -->
-    <div class="container meses">
-      <div class="row">
-        <div class="col section-header">
-            <h3>Enero</h3>
-        </div>
-      </div>
-    </div> <!-- End Enero -->
-
-    <div class="container-fluid">
-    
-      <div class="row mt-3">
-        
-        <!-- Comunicado 282 -->
-        <div class="col-md-6 col-lg-3">
-          <p>
-            <a href="#bloque282" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque282" class="btn">Comunicado 282</a>
-          </p>
-          <div class="collapse" id="bloque282">
-            <div class="card card-body">
-              <h2></h2>
-              <p>Tucumán Rugby Club les desea una muy feliz navidad.</p>
-              <img src="../img/comunicados/feliznavidad.jpg" alt="">  
-            </div>
-          </div>
-        </div><!-- End Comunicado 282 -->
-
-        <!-- Comunicado 281 -->
-        <div class="col-md-6 col-lg-3">
-          <p>
-            <a href="#bloque281" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque281" class="btn btn-primary">Comunicado 281</a>
-          </p>
-          <div class="collapse" id="bloque281">
-            <div class="card card-body">
-              <h2></h2>
-              <p>El equipo de primera del club se consagró campeón en el seven más representativo del país.</p>
-              <img src="../img/comunicados/rugbysevendelplumazo2018.jpg" alt="">
-            </div>
-          </div>
-        </div><!-- End Comunicado 281 -->
-
-        <!-- Comunicado 280 -->
-        <div class="col-md-6 col-lg-3">
-          <p>
-            <a href="#bloque280" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque280" class="btn btn-primary">Comunicado 280</a>
-          </p>
-          <div class="collapse" id="bloque280">
-            <div class="card card-body">
-              <h2></h2>
-              <p>Tucuman Rugby Club, los invita a ya su famosa fiesta de fin de año.</p>
-              <img src="../img/comunicados/rugbyjuvenilpostemp2018.jpg" alt="">
-            </div>
-          </div>
-        </div><!-- End Comunicado 280 -->
-
-        <!-- Comunicado 279 -->
-        <div class="col-md-6 col-lg-3">
-          <p>
-            <a href="#bloque279" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque279" class="btn btn-primary">Comunicado 279</a>
-          </p>
-          <div class="collapse" id="bloque279">
-            <div class="card card-body">
-              <h2></h2>
-              <p>Tucuman Rugby Club, los invita a ya su famosa fiesta de fin de año.</p>
-              <img src="../img/comunicados/fiesta2018.jpg" alt="">
-            </div>
-          </div>
-        </div><!-- End Comunicado 279 -->
-          
-      </div>
   
-    </div>
-
-     <!-- Diciembre -->
-      <div class="container meses">
-        <div class="row">
-          <div class="col section-header">
-              <h3>Diciembre</h3>
-          </div>
-        </div>
-      </div> <!-- End Diciembre -->
-
-    <div class="container-fluid">
-    
-      <div class="row mt-3">
-        
-        <!-- Comunicado 278 -->
-        <div class="col-md-6 col-lg-3">
-          <p>
-            <a href="#bloque278" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque278" class="btn">Comunicado 278</a>
-          </p>
-          <div class="collapse" id="bloque278">
-            <div class="card card-body">
-              <h2>Feliz Navidad</h2>
-              <p>Tucumán Rugby Club les desea una muy feliz navidad.</p>
-              <img src="../img/comunicados/feliznavidad.jpg" alt="">
-            </div>
-          </div>
-        </div><!-- End Comunicado 278 -->
-
-        <!-- Comunicado 277 -->
-        <div class="col-md-6 col-lg-3">
-          <p>
-            <a href="#bloque277" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque277" class="btn btn-primary">Comunicado 277</a>
-          </p>
-          <div class="collapse" id="bloque277">
-            <div class="card card-body">
-              <h2>Seven del Plumazo</h2>
-              <p>El equipo de primera del club se consagró campeón en el seven más representativo del país.</p>
-              <img src="../img/comunicados/rugbysevendelplumazo2018.jpg" alt="">
-            </div>
-          </div>
-        </div><!-- End Comunicado 277 -->
-
-        <!-- Comunicado 276 -->
-        <div class="col-md-6 col-lg-3">
-          <p>
-            <a href="#bloque276" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque276" class="btn btn-primary">Comunicado 276</a>
-          </p>
-          <div class="collapse" id="bloque276">
-            <div class="card card-body">
-              <h2>Cena fin de año</h2>
-              <p>Tucuman Rugby Club, los invita a ya su famosa fiesta de fin de año.</p>
-              <img src="../img/comunicados/rugbyjuvenilpostemp2018.jpg" alt="">
-            </div>
-          </div>
-        </div><!-- End Comunicado 276 -->
-
-        <!-- Comunicado 275 -->
-        <div class="col-md-6 col-lg-3">
-          <p>
-            <a href="#bloque275" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque275" class="btn btn-primary">Comunicado 275</a>
-          </p>
-          <div class="collapse" id="bloque275">
-            <div class="card card-body">
-              <h2>Cena fin de año</h2>
-              <p>Tucuman Rugby Club, los invita a ya su famosa fiesta de fin de año.</p>
-              <img src="../img/comunicados/fiesta2018.jpg" alt="">
-            </div>
-          </div>
-        </div><!-- End Comunicado 275 -->
-          
-      </div>
-
-      <div class="row mt-3">
-        
-        <!-- Comunicado 274 -->
-        <div class="col-md-6 col-lg-3">
-          <p>
-            <a href="#bloque274" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque274" class="btn">Comunicado 274</a>
-          </p>
-          <div class="collapse" id="bloque274">
-            <div class="card card-body">
-              <h2>Seven Álvarez</h2>
-              <p>Te invitamos al seven Álvarez y fútbol mixto.</p>
-              <img src="../img/comunicados/sevendelachilata2018.jpg" alt="">
-              <img src="../img/comunicados/sevendelaachila2018a.jpg" alt="">
-            </div>
-          </div>
-        </div><!-- End Comunicado 274 -->
-
-        <!-- Comunicado 277 -->
-        <div class="col-md-6 col-lg-3">
-          <p>
-            <a href="#bloque273" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bloque273" class="btn btn-primary">Comunicado 273</a>
-          </p>
-          <div class="collapse" id="bloque273">
-            <div class="card card-body">
-              <h2>M14 vs 1ra</h2>
-              <p>El equipo de primera del club se consagró campeón en el seven más representativo del país.</p>
-              <img src="../img/comunicados/rugbym14primera.jpg" alt="">
-            </div>
-          </div>
-        </div><!-- End Comunicado 277 -->
-          
-      </div>
+          <header class="section-header comunicados">
+            <h3>Tienda</h3>
+            <p>Todas nuestras colecciones las encontras aquí. </p>
+          </header>
   
-    </div>
-
-    <!-- Noviembre -->
-    <div class="container meses">
-      <div class="row">
-        <div class="col section-header">
-            <h3>Noviembre</h3>
         </div>
-      </div>
-    </div> <!-- End Noviembre -->
+      </section><!-- #about -->
+  
+      <!-- Tienda -->
+      <section id="services">
+        
+        <div class="container-fluid">
+  
+          <section id="portfolio"  class="section-bg" >
+            <div class="container-fluid">
 
-  </main>
+              <aside>
+                <div class="row col-lg-2">
+                  <div class="btnTienda">
+                    <ul id="portfolio-flters">
+                      <li data-filter="*" class="filter-active row col-lg-12">Todo</li>
+                      <li data-filter=".filter-sweater" class="row col-lg-12">Sweater</li>
+                      <li data-filter=".filter-camisolas"class="row col-lg-12">Camisolas</li>
+                      <li data-filter=".filter-tenis" class="row col-lg-12">Vestidos</li>
+                      <li data-filter=".filter-sociales" class="row col-lg-12">Monos</li>
+                      <li data-filter=".filter-sweater" class="row col-lg-12">Remeras - Top</li>
+                      <li data-filter=".filter-camisolas"class="row col-lg-12">Blusas</li>
+                      <li data-filter=".filter-tenis" class="row col-lg-12">Kimonos</li>
+                      <li data-filter=".filter-sociales" class="row col-lg-12">Sacos</li>
+                      <li data-filter=".filter-tenis" class="row col-lg-12">Calza</li>
+                      <li data-filter=".filter-sociales" class="row col-lg-12">Pantalones</li>
+                    </ul>
+                  </div>
+                </div>
+              </aside>
+      
+              
+      
+              <!-- Primera linea -->
+              <div class="row portfolio-container">
+      
+                <div class="col-lg-3 col-md-5 portfolio-item filter-sweater wow fadeInUp">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="../img/portfolio/remera.jpg" class="img-fluid" alt="">
+                      <a href="../img/portfolio/remera.jpg" data-lightbox="portfolio" data-title="sweater 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                      <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                    </figure>
+      
+                    <div class="portfolio-info">
+                      <h4><a href="#">SWEATER</a></h4>
+                      <p>(cod0001) Sweater Lanilla Cuello Redonde Bordado. </p>
+                      <p>$460 </p>  
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-3 col-md-5 portfolio-item filter-camisolas wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="../img/portfolio/remera2.png" class="img-fluid" alt="">
+                      <a href="../img/portfolio/remera2.png" class="link-preview" data-lightbox="portfolio" data-title="camisolas 1" title="Preview"><i class="ion ion-eye"></i></a>
+                      <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                    </figure>
+      
+                    <div class="portfolio-info">
+                      <h4><a href="#">SWEATER</a></h4>
+                      <p>(cod0002) Sweater Lanilla Cuello Redonde Bordado. </p>
+                      <p>$460 </p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 portfolio-item filter-sweater wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="../img/portfolio/remera.jpg" class="img-fluid" alt="">
+                      <a href="../img/portfolio/remera.jpg" class="link-preview" data-lightbox="portfolio" data-title="sweater 2" title="Preview"><i class="ion ion-eye"></i></a>
+                      <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                    </figure>
+      
+                    <div class="portfolio-info">
+                      <h4><a href="#">SWEATER</a></h4>
+                      <p>(cod0003) Sweater Lanilla Cuello Redonde Bordado. </p>
+                      <p>$460 </p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 portfolio-item filter-camisolas wow fadeInUp">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="../img/portfolio/remera2.png" class="img-fluid" alt="">
+                      <a href="../img/portfolio/remera2.png" class="link-preview" data-lightbox="portfolio" data-title="camisolas 2" title="Preview"><i class="ion ion-eye"></i></a>
+                      <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                    </figure>
+      
+                    <div class="portfolio-info">
+                      <h4><a href="#">SWEATER</a></h4>
+                      <p>(cod0004) Sweater Lanilla Cuello Redonde Bordado. </p>
+                      <p>$460 </p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <!-- End Primera linea -->
+      
+              <!-- Segunda linea -->
+              <div class="row portfolio-container">
+      
+                <div class="col-lg-3 col-md-6 portfolio-item filter-sweater wow fadeInUp">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="../img/portfolio/remera.jpg" class="img-fluid" alt="">
+                      <a href="../img/portfolio/remera.jpg" data-lightbox="portfolio" data-title="sweater 3" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                      <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                    </figure>
+      
+                    <div class="portfolio-info">
+                      <h4><a href="#">SWEATER</a></h4>
+                      <p>(cod0001) Sweater Lanilla Cuello Redonde Bordado. </p>
+                      <p>$460 </p>  
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 portfolio-item filter-sweater wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="../img/portfolio/remera.jpg" class="img-fluid" alt="">
+                      <a href="../img/portfolio/remera.jpg" class="link-preview" data-lightbox="portfolio" data-title="sweater 4" title="Preview"><i class="ion ion-eye"></i></a>
+                      <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                    </figure>
+      
+                    <div class="portfolio-info">
+                      <h4><a href="#">SWEATER</a></h4>
+                      <p>(cod0001) Sweater Lanilla Cuello Redonde Bordado. </p>
+                      <p>$460 </p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 portfolio-item filter-camisolas wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="../img/portfolio/remera2.png" class="img-fluid" alt="">
+                      <a href="../img/portfolio/remera2.png" class="link-preview" data-lightbox="portfolio" data-title="camisolas 3" title="Preview"><i class="ion ion-eye"></i></a>
+                      <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                    </figure>
+      
+                    <div class="portfolio-info">
+                      <h4><a href="#">SWEATER</a></h4>
+                      <p>(cod0001) Sweater Lanilla Cuello Redonde Bordado. </p>
+                      <p>$460 </p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 portfolio-item filter-camisolas wow fadeInUp">
+                  <div class="portfolio-wrap">
+                    <figure>
+                      <img src="../img/portfolio/remera2.png" class="img-fluid" alt="">
+                      <a href="../img/portfolio/remera2.png" class="link-preview" data-lightbox="portfolio" data-title="camisolas 4" title="Preview"><i class="ion ion-eye"></i></a>
+                      <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                    </figure>
+      
+                    <div class="portfolio-info">
+                      <h4><a href="#">SWEATER</a></h4>
+                      <p>(cod0001) Sweater Lanilla Cuello Redonde Bordado. </p>
+                      <p>$460 </p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <!-- End Segunda linea -->
+            </div>
+          </section><!-- #portfolio -->
+  
+        </div>
+      </section> 
+      
+    </main>
 
-  <!--==========================
+<!--==========================
     Footer
   ============================-->
   <footer id="footer">
@@ -306,17 +319,17 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <h3>Tucumán Rugby Club</h3>
-            <p>Estadio y complejo deportivo · Club deportivo</p>
+            <h3>INKILL</h3>
+            <p>Talles rales para la mujer que sos.</p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Enlaces Útiles</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#intro">Inicio</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#about">Nosotros</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#">Actividades</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#">Terminos de Servicio</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#intro">Portada</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#about">Tienda</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#">Promos</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#">Galería</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a class="scrollto" href="#">Políticas de Privacidad </a></li>
             </ul>
           </div>
@@ -324,18 +337,18 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contacto</h4>
             <p>
-              Salas y Valdez 1500 <br>
+              Lobo de la vega 13, Local 113. <br>
               Yerba Buena, Tucumánn <br>
               Argentina. <br>
-              <strong>Teléfono:</strong> +54 0381 425-1148 <br>
-              <strong>Correo:</strong> tucrugby1@arnetbiz.com.ar <br>
+              <strong>Teléfono:</strong> +54 0381 480-9394 <br>
+              <strong>Correo:</strong> inkill.fem@gmail.com <br>
             </p>
 
           </div>
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Nuestras Redes</h4>
-            <p>Seguinos para ver toda la actividad del club.</p>
+            <p>Seguinos para ver todas colecciones y promociones.</p>
             <div class="social-links">
                 <a href="https://twitter.com/TucumanRugby" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
                 <a href="https://www.facebook.com/tucumanrugbyclub/?epa=SEARCH_BOX" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -343,23 +356,30 @@
                 <!-- <a href="#" class="google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
                 <a href="#" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a> -->
               </div>
+              
+                <div class="copyright">
+                  &copy; Copyright <strong> INKILL </strong>. <br> Todos los derechos reservados.
+                </div>
+                <div class="credits">
+                  Power by <a>YBTecno</a>
+                </div>             
           </div>
-
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Tucumán Rugby Club </strong>. Todos los derechos reservados
+        &copy; Copyright <strong> INKILL </strong>. Todos los derechos reservados
       </div>
       <div class="credits">
-        Power by <a href="#">YBTecno</a>
+        Power by <a>YBTecno</a>
       </div>
-    </div>
+    </div> -->
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#" class="back-to-ws"><i class="fab fa-whatsapp"></i></a>
 
   <!-- JavaScript Libraries -->
   <script src="../lib/jquery/jquery.min.js"></script>
@@ -381,6 +401,3 @@
 
   <!-- Template Main Javascript File -->
   <script src="../main.js"></script>
-
-</body>
-</html>
